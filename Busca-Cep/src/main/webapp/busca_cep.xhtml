@@ -1,0 +1,37 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+<h:body>
+	<h:form>
+		<h:panelGrid columns="2">
+			<label>Cep:</label>
+			<br />
+			<h:inputText value="#{cep.cep}" />
+			<br />
+			<label>Rua:</label>
+			<br />
+			<h:inputText value="#{cep.rua}" />
+			<br />
+			<label>Bairro:</label>
+			<br />
+			<h:inputText value="#{cep.bairro}" />
+			<br />
+			<label>Cidade:</label>
+			<br />
+			<h:inputText value="#{cep.cidade}" />
+			<br />
+			<label>Estado:</label>
+			<br />
+			<h:inputText value="#{cep.estado}" />
+			<br />
+			<h:commandButton value="Busca CEP" action="#{cep.buscaCep}" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
+
